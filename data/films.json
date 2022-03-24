@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Langit Biru",
+    "imgUrl": "https://www.ihttps://asset.kompas.com/crops/pqYfVjYnOw1LoVF4SOvFCKW0A3A=/0x0:1000x667/780x390/data/photo/2019/09/21/5d86419fd5221.jpgmdb.com/title/tt2285547/mediaviewer/rm3213609473/?ref_=ext_shr_lnk",
+    "synopsis": "Langit sangatlah biru, itulah kata karakter utama pada saat dia berjalan-jalan di pagi hari...Lihat selengkapnya",
+    "UserId": 1,
+    "rating": 5,
+    "premierDate": "2022-11-02",
+    "genre": "adventure"
+  },
+  {
+    "title": "Lautan Biru",
+    "imgUrl": "https://www.ihttps://asset.kompas.com/crops/pqYfVjYnOw1LoVF4SOvFCKW0A3A=/0x0:1000x667/780x390/data/photo/2019/09/21/5d86419fd5221.jpgmdb.com/title/tt2285547/mediaviewer/rm3213609473/?ref_=ext_shr_lnk",
+    "synopsis": "Lautan sangatlah biru, itulah kata karakter utama pada saat dia berjalan-jalan di pantai...Lihat selengkapnya",
+    "UserId": 2,
+    "rating": 3,
+    "premierDate": "2022-11-02",
+    "genre": "drama"
+  },
+  {
+    "title": "Bumi Biru",
+    "imgUrl": "https://www.ihttps://asset.kompas.com/crops/pqYfVjYnOw1LoVF4SOvFCKW0A3A=/0x0:1000x667/780x390/data/photo/2019/09/21/5d86419fd5221.jpgmdb.com/title/tt2285547/mediaviewer/rm3213609473/?ref_=ext_shr_lnk",
+    "synopsis": "Bumi sangatlah biru, itulah kata antagonis alien pada saat dia terdampar di bumi...Lihat selengkapnya",
+    "UserId": 2,
+    "rating": 1,
+    "premierDate": "2022-11-02",
+    "genre": "sci-fi"
+  }
+]

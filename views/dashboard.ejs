@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <title>Dashboard</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .header {
+      width: 90vw;
+      margin: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header div {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    a {
+      margin: 5px;
+    }
+
+    .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 25px;
+    }
+
+    .card {
+      padding: 10px;
+      width: 20vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+    }
+
+    .card div {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .card img {
+      margin: 0 auto;
+      width: 200px;
+      height: 160px;
+      object-fit: contain;
+    }
+
+    .card h4 {
+      color: grey;
+      text-align: center;
+    }
+
+    .btn {
+      margin: 0 20px;
+      padding: 5px 0;
+      width: 80px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      background-color: #fba608;
+      color: #000000;
+    }
+
+    .btn-delete {
+      color: white;
+      background-color: rgb(243, 56, 56);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dashboard</h1>
+
+  <h3>
+    WELCOME <%= result[0].username %>
+  </h3><br>
+
+  <% result[0].Films.forEach(el=> { %>
+    <div class="card">
+      <h6>
+        <%= el.title %>
+      </h6>
+      <p>
+        <img src="<%= el.imgUrl %>">
+      </p>
+      <p>
+        <%= el.synopsis %>
+      </p>
+      <p>
+        <%= el.rating %>
+      </p>
+      <p>
+        <%= dateFormat(el.premierDate) %>
+      </p>
+      <p>
+        <%= el.genre %>
+      </p>
+      <a href="/edit/<%= el.id %>"><button type="button">Edit</button></a>
+    </div><br><br>
+    <% }) %>
+
+      <a href="/explore"><button>Explore</button></a>
+
+      <a href="/logout"><button>Logout</button></a>
+</body>
+
+</html>
