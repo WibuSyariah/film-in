@@ -34,7 +34,7 @@
         .card {
             padding: 10px;
             width: 20vw;
-            height: 50vh;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -76,14 +76,13 @@
   </style>
 </head>
 
-
-
-<body>
+</body>
+  <%- include('partials/navbarexplore.ejs') %>
   <h1><%= role %></h1>
-  <form class="d-flex">
+  <!-- <form class="d-flex">
     <input class="form-control me-2" name="title" type="search" placeholder="Search by title" aria-label="Search">
     <button class="btn btn-outline-success" type="submit">Search</button>
-  </form>
+  </form> -->
   <a href="/postFilm"><button class="btn btn-outline-success" type="submit">Add Film</button></a><br>
   
   <div class="content-container">
