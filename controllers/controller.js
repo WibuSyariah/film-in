@@ -66,7 +66,7 @@ class Controller {
     res.render("createProfileForm", { id });
   }
 
-  static createProfile(req, res) {
+  static createProfile(req, res) { 
     const { alias, biodata } = req.body;
     const UserId = req.query.id;
     const createdAt = new Date();
